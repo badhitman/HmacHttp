@@ -119,6 +119,9 @@ namespace HmacHttp
         #endregion
 
         #region Проверка запроса/ответа
+        ///////////////////////////////////////////////////
+        //
+
         /// <summary>
         /// Проверка подписи клиент-сервер
         /// </summary>
@@ -141,6 +144,9 @@ namespace HmacHttp
             
             return VerifiSignature(inc_nonce, my_response.ContentLength.ToString(), inc_signature);
         }
+        
+        //
+        ///////////////////////////////////////////////////
         #endregion
 
         /// <summary>
